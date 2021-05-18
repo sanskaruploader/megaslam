@@ -132,7 +132,7 @@ class MirrorListener(listeners.MirrorListeners):
         if self.message.from_user.username:
             uname = f"@{self.message.from_user.username}"
         else:
-            uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
+            uname = f'Hey <a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
         msg = f"{uname} your download has been stopped due to: {error}"
         sendMessage(msg, self.bot, self.update)
         if count == 0:
@@ -177,7 +177,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n\ncc: {uname}'
+                msg += f'\n\n<b>Added by: </b>{uname}'
             try:
                 fs_utils.clean_download(download_dict[self.uid].path())
             except FileNotFoundError:
