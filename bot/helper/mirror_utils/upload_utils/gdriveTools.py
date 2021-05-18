@@ -564,7 +564,7 @@ class GoogleDriveHelper:
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
                                                         title = 'XeedBox Mirror Search',
                                                         author_name='XeedBox',
-                                                        author_url='https://github.com/telegram.me/xeedbox',
+                                                        author_url='https://telegram.me/xeedbox',
                                                         html_content=content
                                                         )['path'])
 
