@@ -180,21 +180,15 @@ def bot_help(update, context):
 
 botcmds = [
 BotCommand(f'{BotCommands.MirrorCommand}', 'Start Mirroring'),
-BotCommand(f'{BotCommands.TarMirrorCommand}','Upload tar (zipped) file'),
-BotCommand(f'{BotCommands.UnzipMirrorCommand}','Extract files'),
-BotCommand(f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
-BotCommand(f'{BotCommands.WatchCommand}','Mirror YT-DL support link'),
-BotCommand(f'{BotCommands.TarWatchCommand}','Mirror Youtube playlist link as tar'),
+BotCommand(f'{BotCommands.TarMirrorCommand}','Upload tar (zipped) File'),
+BotCommand(f'{BotCommands.UnzipMirrorCommand}','Extract Files'),
+BotCommand(f'{BotCommands.CloneCommand}','Copy File/Folder to Drive'),
+BotCommand(f'{BotCommands.WatchCommand}','Mirror YT-DL Support link'),
+BotCommand(f'{BotCommands.TarWatchCommand}','Mirror Youtube Playlist Link as tar'),
 BotCommand(f'{BotCommands.CancelMirror}','Cancel a task'),
-BotCommand(f'{BotCommands.CancelAllCommand}','Cancel all tasks'),
-BotCommand(f'{BotCommands.DeleteCommand}','Delete file from Drive'),
-BotCommand(f'{BotCommands.ListCommand}',' [query] Searches files in G-Drive'),
-BotCommand(f'{BotCommands.StatusCommand}','Get Mirror Status message'),
-BotCommand(f'{BotCommands.StatsCommand}','Bot Usage Stats'),
-BotCommand(f'{BotCommands.HelpCommand}','Get Detailed Help'),
-BotCommand(f'{BotCommands.SpeedCommand}','Check Speed of the host'),
-BotCommand(f'{BotCommands.LogCommand}','Bot Log [owner only]'),
-BotCommand(f'{BotCommands.RestartCommand}','Restart bot [owner only]')]
+BotCommand(f'{BotCommands.ListCommand}',' [query] Searches Files in Drive'),
+BotCommand(f'{BotCommands.StatusCommand}','Get Mirror Status Message'),
+BotCommand(f'{BotCommands.StatsCommand}','Bot Usage Stats')]
 
 
 def main():
