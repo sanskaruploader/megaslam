@@ -47,17 +47,13 @@ def stats(update, context):
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
-@run_async
+run_async
 def start(update, context):
     start_string = f'''
-This bot can mirror all your links to Google drive!
+This is a bot which can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    button = [
-    [InlineKeyboardButton("Repo", url=f"https://github.com/breakdowns/slam-mirrorbot"),
-     InlineKeyboardButton("Support Group", url=f"https://t.me/SlamMirrorSupport")]]
-    reply_markup = InlineKeyboardMarkup(button)
-    update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode=ParseMode.MARKDOWN, reply_markup=reply_markup)
+    sendMessage(start_string, context.bot, update)
 
 
 @run_async
