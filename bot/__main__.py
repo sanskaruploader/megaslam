@@ -41,9 +41,9 @@ def stats(update, context):
             f'<b>Free:</b> {free}\n\n' \
             f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
             f'<b>Download:</b> {recv}\n\n' \
-            f'<b>CPU:</b> {cpuUsage}%\n' \
-            f'<b>RAM:</b> {memory}%\n' \
-            f'<b>DISK:</b> {disk}%'
+            f'<b>CPU:</b> {cpuUsage}%' \
+            f'<b>RAM:</b> {memory}%' \
+            f'<b>Disk:</b> {disk}%'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
